@@ -1,0 +1,55 @@
+---
+id: install
+title: Installation
+sidebar_label: Installation
+description: How to install Squirrelly for use in Node.js or the browser
+---
+
+Squirrelly tries to follow best practices, and provides a UMD build to support most JS loading options, like ES modules, CommonJS, and AMD.
+
+## Install Squirrelly
+
+<Tabs items={['Node.js', 'Browser (CDN)']}>
+
+<Tab>
+
+```sh
+npm install squirrelly --save
+```
+
+Or if you prefer Yarn:
+
+```sh
+yarn add squirrelly
+```
+
+### Importing / Requiring
+
+Sqrl is packaged as a UMD module, so you can require with CommonJS, import using ES Modules, or use AMD.
+
+```js
+import * as Sqrl from 'squirrelly'
+// or
+var Sqrl = require('squirrelly')
+```
+
+</Tab>
+<Tab>
+
+### Unpkg
+
+```html
+<script src="https://unpkg.com/squirrelly"></script>
+```
+
+### JSDelivr
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/squirrelly"></script>
+```
+
+This makes Squirrelly available through the global `Sqrl` variable, and importable using ES modules, CommonJS, and AMD.
+
+</Tab>
+
+</Tabs>
